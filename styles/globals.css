@@ -1,0 +1,265 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  font-weight: 600;
+}
+
+nav {
+  background-color: black;
+  font-size: xx-large;
+  padding: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+
+nav a {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+:disabled,
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  width: auto;
+  vertical-align: middle;
+}
+
+.checkbox input[type='checkbox'] {
+  opacity: 0;
+  position: absolute;
+}
+.checkbox label {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+  min-height: 25px;
+}
+.checkbox label span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+.checkbox label:before {
+  content: '';
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.checkbox label:after {
+  content: '';
+  border: 3px solid #79d4bc;
+  border-width: 0 3px 3px 0px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 4px;
+  height: 10px;
+  transform: rotate(45deg);
+  display: none;
+}
+.checkbox input[type='checkbox']:checked + label:after {
+  display: block;
+}
+
+.radio {
+  display: inline-block;
+  min-height: 22px;
+}
+.radio input[type='radio'] {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+.radio label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.radio label:before {
+  width: 20px;
+  height: 20px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radio label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  display: none;
+  border-radius: 50%;
+}
+.radio input[type='radio']:checked + label:after {
+  display: block;
+}
+.quizContainer {
+  background-color: #79d4bc;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.formContainer {
+  padding: 10px;
+  border-bottom: black dotted 1px;
+  display: flex;
+  width: 100%;
+}
+.formContainer label {
+  width: 250px;
+}
+.formContainer input {
+  width: 80%;
+}
+.quesRoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start
+}
+
+.QuestionContainer {
+  padding: 10px;
+  border-bottom: black dotted 1px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.QuestionContainer label {
+  width: 250px;
+}
+
+.QuestionContainer .questionTypeDiv {
+  padding: 10px;
+}
+
+.QuestionContainer .questionTypeDiv label {
+  padding: 10px;
+  width: 250px;
+}
+
+.QuestionContainer .questionTypeDiv select {
+  padding: 10px;
+  border: 3px double deeppink;
+}
+
+.QuestionContainer .questext {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.optionContainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#answer_option {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#answer_option textarea {
+  padding: 10px;
+  margin: 10px;
+}
+
+#answer_option input {
+  padding: 10px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  background-color: chocolate;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.testContaner {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid red;
+}
+
+.testContaner img {
+  border: 2px solid red;
+}
+
+/* * {
+  box-sizing: border-box;
+  border: 2px solid;
+} */
+
+.testContaner p {
+  border: 2px solid red;
+  padding: 10px;
+}
+.testContaner .questionC, .instruc{
+  border: 2px solid red;
+  padding: 10px;
+  margin: 5px;
+}
+.questionC label {
+  padding: 10px;
+}
+
+.questionC input {
+  /* padding: 10px; */
+  margin: 10px;
+}
